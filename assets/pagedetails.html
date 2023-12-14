@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surfing_Home</title>
+    <!-- (B) AUDIO PLAYERS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+      html {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        max-height: 100%;
+        background: linear-gradient(45deg, #1f1f1f, #323335);
+        font-family: "Titillium Web", sans-serif;
+      }
+      body * {
+        animation: intro 1s ease-in-out 1s forwards;
+        opacity: 0;
+        transform: translateY(0);
+      }
+      @keyframes intro {
+        0% {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .entire {
+        width: 700px;
+        height: 500px;
+        position: absolute;
+        display: flex;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background: #eee;
+        box-shadow: 0 0px 34px -2px rgb(0, 0, 0);
+      }
+      .in-entire {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .left-cov,
+      .right-cov {
+        height: 100%;
+      }
+      .left-cov {
+        width: 35%;
+        background: #3bd881;
+      }
+      .right-cov {
+        width: 65%;
+        background: #fff;
+        overflow: auto;
+      }
+      @media (max-width: 700px) {
+        .entire {
+          width: auto;
+          height: auto;
+        }
+        .left-cov,
+        .right-cov {
+          width: 100%;
+        }
+      }
+      .profile {
+        margin: 100px auto 50px auto;
+        width: 100px;
+        padding: 10px;
+      }
+      .human {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border: 9px solid #fff;
+        border-radius: 50%;
+        position: relative;
+        &:before {
+          content: "";
+          width: 108px;
+          height: 100px;
+          position: absolute;
+          border: 3px solid #fff;
+          border-width: 9px 0 0 0;
+          right: -55%;
+          bottom: -112px;
+          border-radius: 50%;
+        }
+      }
+      .basic {
+        text-align: center;
+        font-size: 26px;
+        color: #fff;
+        & span {
+          display: block;
+          text-align: center;
+          font-size: 22px;
+        }
+      }
+      .detail {
+        padding: 1px;
+      }
+      .full-detail {
+        padding: 20px 30px;
+        overflow: auto;
+      }
+      h3 {
+        text-align: center;
+        position: relative;
+        padding: 1px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+          bottom: -10px;
+          width: 30px;
+          height: 3px;
+          background: #3bd881;
+        }
+      }
+      h4 {
+        position: relative;
+        padding: 1px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 10px;
+          height: 2px;
+          background: #3bd881;
+        }
+      }
+      p a {
+        text-decoration: none;
+        color: #000;
+        font-size: 16px;
+        &:hover {
+          color: #888;
+        }
+      }
+      .ball {
+        display: block;
+        width: 10px;
+        height: 10px;
+        background: #fff;
+        border-radius: 50%;
+        margin: 0 auto;
+        opacity: 1;
+        animation: jump 1s infinite alternate;
+      }
+      @keyframes jump {
+        0% {
+          transform: translatex(-10px);
+        }
+        50% {
+          transform: translatex(10px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="entire">
+      <div class="in-entire">
+        <div class="left-cov">
+          <div class="profile">
+            <div class="human"></div>
+          </div>
+          <div class="basic">
+            Facebook
+          </div>
+        </div>
+        <div class="right-cov">
+          <div class="detail">
+            <h3>Page Details</h3>
+          </div>
+          <div class="full-detail">
+            <h4>Name:</h4>
+            <p>Facebook</h4>
+
+            <h4>Description:</h4>
+            <p>FacebookFacebook helps you connect and share with the people in your life.</p>
+            <h4>URL</h4>
+            <p><a href="https://www.facebook.com">https://www.facebook.com</a></p>
+            <h4>Listed Since:</h4>
+<h4>12/12/2023</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

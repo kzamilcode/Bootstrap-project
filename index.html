@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surfing_Home</title>
+    <!-- (B) AUDIO PLAYERS -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row d-flex mx-auto mt-4 mb-3 align-items-center">
+        <ul class="payment-methods">
+          <li class="payment-method paypal">
+            <input name="payment_methods" type="radio" id="paypal" />
+            <label for="paypal">PayPal</label>
+          </li>
+
+          <li class="payment-method pagseguro">
+            <input name="payment_methods" type="radio" id="pagseguro" />
+            <label for="pagseguro">PagSeguro</label>
+          </li>
+
+          <li class="payment-method bankslip">
+            <input name="payment_methods" type="radio" id="bankslip" />
+            <label for="bankslip">Boleto</label>
+          </li>
+        </ul>
+        <div class="col-lg-5">
+          <div class="row justify-content-end">
+            <div class="input-group col-lg-10 col-md-12">
+              <div class="input-group-prepend">
+                <span
+                  class="form-control bg-light text-white rounded-0 text-primary"
+                  ><i class="fa fa-search" aria-hidden="true"></i
+                ></span>
+              </div>
+              <input
+                class="form-control"
+                id="search-box"
+                type="text"
+                name="search"
+                placeholder="Search for... "
+                required="required"
+              />
+              <div class="input-group-append">
+                <select
+                  class="form-control bg-light rounded-0 text-capitalize"
+                  id="search-filter"
+                  name="search-filter"
+                >
+                  <option value="listitem">All</option>
+                  <option value="name">Name</option>
+                  <option value="address">Address</option>
+                  <option value="email">Email</option>
+                  <option value="status">Status</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <a href="1" class="prev">&laquo;</a>
+          <a href="#">1</a>
+          <a href="#" class="active">2</a>
+          <a href="#">3</a>
+          <a href="#">4</a>
+          <a href="#">5</a>
+          <a href="#">6</a>
+          <a href="#" id="next" class="next">&raquo;</a>
+        </div>
+      </div>
+
+      <table class="container">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>URL</th>
+            <th>Description</th>
+            <th>Instagram</th>
+            <th>YouTube</th>
+            <th>TikTok</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tom</td>
+            <td>https://www.bizsugar.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Virat Bisht</td>
+            <td>http://gigablast.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Jack</td>
+            <td>http://exactseek.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Garry</td>
+            <td>http://activesearchresults.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Uttam Tripura</td>
+            <td>http://viesearch.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Ashton Cox</td>
+            <td>http://jayde.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Airi Satou</td>
+            <td>http://linkcentre.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Bob Marley</td>
+            <td>http://operationuplink.org/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Jacob</td>
+            <td>http://youmob.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>Mark</td>
+            <td>http://01webdirectory.com/</td>
+            <td>Lorem ipsum dolor sit amet.</td>
+            <td><i class="fa-solid fa-xmark"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td><i class="fa-solid fa-check"></i></td>
+            <td>
+              <button type="button" name="edit" class="edit-member">
+                <i class="fa-solid fa-info"></i>
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
